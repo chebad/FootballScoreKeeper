@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:id="@+id/activity_main"
+    android:background="@drawable/maybecanwork"
+    tools:context="com.example.android.footballscorekeeper.MainActivity">
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                style="@style/StyleForTextViews1"
+                android:text="@string/team_a"/>
+
+            <TextView
+                style="@style/StyleForScoreTextView"/>
+            <TextView
+                android:id="@+id/score_team_A"
+                style="@style/TextForGoals" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/StyleForTextViews1"
+                android:text="@string/team_b"/>
+
+            <TextView
+                style="@style/StyleForScoreTextView"/>
+            <TextView
+                android:id="@+id/score_team_B"
+                style="@style/TextForGoals" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <Button
+                style="@style/CodeForButton1"
+                android:text="@string/fouls"
+                android:onClick="teamAFoul"/>
+
+            <Button
+                style="@style/CodeForButton1"
+                android:text="@string/shot_failed"
+                android:onClick="teamAShotFailed"/>
+
+            <Button
+                style="@style/CodeForButton1"
+                android:text="@string/offside"
+                android:onClick="teamAOffside"/>
+
+            <Button
+                style="@style/CodeForButton1"
+                android:text="@string/yellow_cards"
+                android:onClick="teamAYellowCard"/>
+
+            <Button
+                style="@style/CodeForButton1"
+                android:text="@string/red_cards"
+                android:onClick="teamARedCard"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/fouls_teamA_view"
+                style="@style/CodeForTextLayout1" />
+            <TextView
+                android:id="@+id/shot_failed_A"
+                style="@style/CodeForTextLayout1" />
+            <TextView
+                android:id="@+id/offside_A"
+                style="@style/CodeForTextLayout1" />
+            <TextView
+                android:id="@+id/yellow_card_A"
+                style="@style/CodeForTextLayout1" />
+            <TextView
+                android:id="@+id/red_card_A"
+                style="@style/CodeForTextLayout1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/fouls_teamB_view"
+                style="@style/CodeForTextLayout1" />
+            <TextView
+                android:id="@+id/shot_failed_B"
+                style="@style/CodeForTextLayout1" />
+            <TextView
+                android:id="@+id/offside_B"
+                style="@style/CodeForTextLayout1" />
+            <TextView
+                android:id="@+id/yellow_card_B"
+                style="@style/CodeForTextLayout1" />
+            <TextView
+                android:id="@+id/red_card_B"
+                style="@style/CodeForTextLayout1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="vertical">
+            <Button
+                android:onClick="teamBFoul"
+                style="@style/CodeForButton1"
+                android:text="@string/fouls"/>
+
+            <Button
+                android:onClick="teamBShotFailed"
+                style="@style/CodeForButton1"
+                android:text="@string/shot_failed"/>
+
+            <Button
+                android:onClick="teamBOffside"
+                style="@style/CodeForButton1"
+                android:text="@string/offside"/>
+
+            <Button
+                android:onClick="teamBYellowCard"
+                style="@style/CodeForButton1"
+                android:text="@string/yellow_cards"/>
+
+            <Button
+                android:onClick="teamBRedCard"
+                style="@style/CodeForButton1"
+                android:text="@string/red_cards"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <Button
+                style="@style/CodeForButton2"
+                android:text="@string/score_gol"
+                android:onClick="teamAScore"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                style="@style/CodeForButton2"
+                android:text="@string/score_gol"
+                android:onClick="teamBScore"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <Button
+            style="@style/CodeForReset"
+            android:text="@string/reset"
+            android:onClick="resetAll"/>
+    </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+
