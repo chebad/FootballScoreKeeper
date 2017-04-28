@@ -1,7 +1,6 @@
 package com.example.android.footballscorekeeper;
 
 import android.app.Activity;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
@@ -61,10 +60,6 @@ public class MainActivity extends Activity {
 
     //==============================================================================================
 
-    /**
-     * Method which is first set on and create first view for my app.
-     * @param savedInstanceState
-     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -123,7 +118,7 @@ public class MainActivity extends Activity {
     }
     /**
      * Increment a offsides for team A and display on TextView.
-     * @param v
+     * @param v The view.
      */
     public void teamAOffside(View v){
         offsideTeamA++;
@@ -132,7 +127,7 @@ public class MainActivity extends Activity {
     }
     /**
      * Increment a offsides for team A and display on TextView.
-     * @param v
+     * @param v The view.
      */
     public void teamBOffside(View v){
         offsideTeamB++;
@@ -141,7 +136,7 @@ public class MainActivity extends Activity {
     }
     /**
      * Increment a yellow cards for team A and display value on TextView.
-     * @param v
+     * @param v The view.
      */
     public void teamAYellowCard(View v){
         yellowCardTeamA++;
@@ -150,7 +145,7 @@ public class MainActivity extends Activity {
     }
     /**
      * Increment a yellow cards for team B and display value on TextView.
-     * @param v
+     * @param v The view.
      */
     public void teamBYellowCard(View v){
         yellowCardTeamB++;
@@ -159,7 +154,7 @@ public class MainActivity extends Activity {
     }
     /**
      * Increment value of red cards for team A and display value on TeamView.
-     * @param v
+     * @param v The view.
      */
     public void teamARedCard(View v){
         redCardTeamA++;
@@ -168,7 +163,7 @@ public class MainActivity extends Activity {
     }
     /**
      * Increment value of red cards for team B and display value on TeamView.
-     * @param v
+     * @param v The view.
      */
     public void teamBRedCard(View v){
         redCardTeamB++;
@@ -178,7 +173,7 @@ public class MainActivity extends Activity {
 
     /**
      * Reset all values to start values(= 0).
-     * @param v
+     * @param v The view.
      */
     public void resetAll(View v){
         /*

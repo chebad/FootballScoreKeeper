@@ -2,11 +2,11 @@
 
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true"
-    android:id="@+id/activity_main"
     android:background="@drawable/maybecanwork"
+    android:fillViewport="true"
     tools:context="com.example.android.footballscorekeeper.MainActivity">
     <LinearLayout
     android:layout_width="match_parent"
@@ -17,6 +17,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="3"
+        android:baselineAligned="false"
         android:orientation="horizontal">
 
         <LinearLayout
@@ -60,6 +61,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="6"
+        android:baselineAligned="false"
         android:orientation="horizontal">
 
         <LinearLayout
@@ -70,28 +72,28 @@
 
             <Button
                 style="@style/CodeForButton1"
-                android:text="@string/fouls"
-                android:onClick="teamAFoul"/>
+                android:onClick="teamAFoul"
+                android:text="@string/fouls" />
 
             <Button
                 style="@style/CodeForButton1"
-                android:text="@string/shot_failed"
-                android:onClick="teamAShotFailed"/>
+                android:onClick="teamAShotFailed"
+                android:text="@string/shot_failed" />
 
             <Button
                 style="@style/CodeForButton1"
-                android:text="@string/offside"
-                android:onClick="teamAOffside"/>
+                android:onClick="teamAOffside"
+                android:text="@string/offside" />
 
             <Button
                 style="@style/CodeForButton1"
-                android:text="@string/yellow_cards"
-                android:onClick="teamAYellowCard"/>
+                android:onClick="teamAYellowCard"
+                android:text="@string/yellow_cards" />
 
             <Button
                 style="@style/CodeForButton1"
-                android:text="@string/red_cards"
-                android:onClick="teamARedCard"/>
+                android:onClick="teamARedCard"
+                android:text="@string/red_cards" />
         </LinearLayout>
 
         <LinearLayout
@@ -144,28 +146,28 @@
             android:layout_weight="3"
             android:orientation="vertical">
             <Button
-                android:onClick="teamBFoul"
                 style="@style/CodeForButton1"
+                android:onClick="teamBFoul"
                 android:text="@string/fouls"/>
 
             <Button
-                android:onClick="teamBShotFailed"
                 style="@style/CodeForButton1"
+                android:onClick="teamBShotFailed"
                 android:text="@string/shot_failed"/>
 
             <Button
-                android:onClick="teamBOffside"
                 style="@style/CodeForButton1"
+                android:onClick="teamBOffside"
                 android:text="@string/offside"/>
 
             <Button
-                android:onClick="teamBYellowCard"
                 style="@style/CodeForButton1"
+                android:onClick="teamBYellowCard"
                 android:text="@string/yellow_cards"/>
 
             <Button
-                android:onClick="teamBRedCard"
                 style="@style/CodeForButton1"
+                android:onClick="teamBRedCard"
                 android:text="@string/red_cards"/>
         </LinearLayout>
     </LinearLayout>
@@ -174,6 +176,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="2"
+        android:baselineAligned="false"
         android:orientation="horizontal">
         <LinearLayout
             android:layout_width="0dp"
@@ -181,8 +184,8 @@
             android:layout_weight="1">
             <Button
                 style="@style/CodeForButton2"
-                android:text="@string/score_gol"
-                android:onClick="teamAScore"/>
+                android:onClick="teamAScore"
+                android:text="@string/score_gol" />
         </LinearLayout>
 
         <LinearLayout
@@ -192,8 +195,8 @@
 
             <Button
                 style="@style/CodeForButton2"
-                android:text="@string/score_gol"
-                android:onClick="teamBScore"/>
+                android:onClick="teamBScore"
+                android:text="@string/score_gol" />
 
         </LinearLayout>
     </LinearLayout>
@@ -204,8 +207,8 @@
         android:orientation="vertical">
         <Button
             style="@style/CodeForReset"
-            android:text="@string/reset"
-            android:onClick="resetAll"/>
+            android:onClick="resetAll"
+            android:text="@string/reset" />
     </LinearLayout>
     </LinearLayout>
 </ScrollView>
