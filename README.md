@@ -1,4 +1,4 @@
 # FootballScoreKeeper
 Third Android application. Simple score keepper.
 
-Trzecia aplikacja, troszke bardziej rozbudowana z kursu Udacity.
+Application for Udacity Android Bacisc Nanodegree course. It's simple score keeper, called FootballScoreKeeper.
